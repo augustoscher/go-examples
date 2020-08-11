@@ -13,7 +13,7 @@ func main() {
 func cutTheSticks(arr []int32) []int32 {
 	var res []int32
 	sortArray(arr)
-	
+
 	res = append(res, int32(len(arr)))
 	x, arr := arr[0], arr[1:]
 
@@ -21,7 +21,7 @@ func cutTheSticks(arr []int32) []int32 {
 		for i := 0; i < len(arr); i++ {
 			arr[i] = arr[i] - x
 		}
-		
+
 		arr = removeAll(arr, 0)
 		res = append(res, int32(len(arr)))
 		x = arr[0]
