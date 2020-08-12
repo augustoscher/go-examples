@@ -33,4 +33,5 @@ func main() {
 	fmt.Println("Structs:", p1 == p2) // false
 	fmt.Println("Structs:", p2 == p3) // true
 
+	
 }
