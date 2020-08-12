@@ -26,4 +26,18 @@ func main() {
 	fmt.Println("Max valor =>", math.Max(float64(a), float64(b))) // precisa converter p float64
 	fmt.Println("Min valor =>", math.Min(c, d))                   // precisa converter p float64
 	fmt.Println("Pow =>", math.Pow(c, d))                         //9
+
+	// atribuições
+	i := 3
+	i += 3 // i = i + 3
+	i -= 3 // i = i - 3
+	i /= 2 // i = i / 3
+	i *= 2 // i = i * 3
+	i %= 2 // i = i % 3
+
+	x, y := 1, 2
+	fmt.Println(x, y)
+
+	x, y = y, x // troca o valor das variaveis
+	fmt.Println(x, y)
 }
