@@ -58,4 +58,6 @@ func main() {
 	} else {
 		fmt.Printf("Number %d is lower than 5.\n", i)
 	}
+
+	//fmt.Println(i) i is avaiable only in if else block
 }
