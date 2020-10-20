@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 func printResult(grade float64) string {
 	if grade >= 7 {
@@ -24,6 +28,14 @@ func gradeToConcept(grade float64) string {
 	}
 }
 
+func randomNum() int {
+	s := rand.NewSource(time.Now().UnixNano())
+	r := rand.New(s)
+	return r.Intn(10)
+}
+
+// initializing variable before
+
 func main() {
 	grade := 9.0
 	fmt.Printf("Grade: %f - Status: %s - Concept: %s\n", grade, printResult(grade), gradeToConcept(grade))
@@ -39,4 +51,11 @@ func main() {
 
 	grade = 11
 	fmt.Printf("Grade: %f - Status: %s - Concept: %s\n", grade, printResult(grade), gradeToConcept(grade))
+
+	// initialize in initilizing block; Can be done in switcth, for...
+	if i := randomNum(); i > 5 {
+		fmt.Printf("Number %d is greather than 5.\n", i)
+	} else {
+		fmt.Printf("Number %d is lower than 5.\n", i)
+	}
 }
