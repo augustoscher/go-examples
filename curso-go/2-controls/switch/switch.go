@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func gradeToConcept(grade float64) string {
 	g := int(grade)
@@ -25,5 +28,16 @@ func gradeToConcept(grade float64) string {
 func main() {
 	fmt.Println(gradeToConcept(10))
 	fmt.Println(gradeToConcept(5))
+
+	t := time.Now()
+	switch {
+	// procura o primeiro case que der verdadeiro
+	case t.Hour() < 12:
+		fmt.Println("Bom dia!")
+	case t.Hour() < 18:
+		fmt.Println("Boa tarde!")
+	default:
+		fmt.Println("Boa noite!")
+	}
 
 }
