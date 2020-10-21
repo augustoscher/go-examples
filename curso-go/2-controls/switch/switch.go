@@ -31,7 +31,7 @@ func main() {
 
 	t := time.Now()
 	switch {
-	// procura o primeiro case que der verdadeiro
+	// entra na primeira opção que der verdadeiro
 	case t.Hour() < 12:
 		fmt.Println("Bom dia!")
 	case t.Hour() < 18:
