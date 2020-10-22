@@ -18,4 +18,5 @@ func main() {
 	avg := total / float64(len(grades))
 	fmt.Printf("Méida é: %.2f\n", avg)
 
+	
 }
