@@ -29,5 +29,4 @@ func main() {
 
 	sliceOfSlice := s3[:1]
 	fmt.Println(sliceOfSlice) //5
-
 }
