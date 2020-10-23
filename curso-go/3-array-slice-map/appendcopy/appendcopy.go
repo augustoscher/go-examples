@@ -11,6 +11,6 @@ func main() {
 	fmt.Println(array1, slice1) //[1 2 3] [4 5 6]
 
 	slice2 := make([]int, 2)
-	copy(slice2, slice1) //slice2 is length 2. It will have [4, 5]
+	copy(slice2, slice1) //slice2 is length 2. It will have [4, 5] copied from slice1[4, 5, 6]
 	fmt.Println(slice1, slice2)
 }
