@@ -28,4 +28,25 @@ func main() {
 	delete(approved, 987654321)
 
 	fmt.Println(approved) //tom and john
+	fmt.Println()
+	// ==================================================
+
+	//initilizing map
+	salary := map[string]float64{
+		"Joseph Slater": 11325.45,
+		"Tom Silver":    12900.79,
+		"August Hawk":   10000.00,
+	}
+
+	fmt.Println(salary)
+
+	//writing on map
+	salary["Richard Noris"] = 9500.00
+	fmt.Println(salary)
+
+	delete(salary, "NonExisting")
+
+	for name, salary := range salary {
+		fmt.Printf("Name: %s - Salary: %.2f\n", name, salary)
+	}
 }
