@@ -13,8 +13,16 @@ func main() {
 
 	fmt.Println(approved)
 
+	//loop in map
 	for key, value := range approved {
 		fmt.Printf("ID: %d - Name: %s\n", key, value)
 	}
 
+	//read from map
+	fmt.Printf("Map value: %s\n", approved[298472983])
+
+	//delete value
+	delete(approved, 987654321)
+
+	fmt.Println(approved) //tom and john
 }
