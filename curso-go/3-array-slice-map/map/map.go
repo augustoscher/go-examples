@@ -49,4 +49,32 @@ func main() {
 	for name, salary := range salary {
 		fmt.Printf("Name: %s - Salary: %.2f\n", name, salary)
 	}
+	fmt.Println()
+	// ==================================================
+
+	//map aninhado
+	salaryByLetter := map[string]map[string]float64{
+		"J": {
+			"Joseph Slater": 11325.45,
+			"Jimmy Hendrix": 90000.00,
+		},
+		"T": {
+			"Tom Silver": 12900.79,
+		},
+		"A": {
+			"August Hawk": 10000.00,
+		},
+	}
+
+	fmt.Println(salaryByLetter)
+
+	//salary of jimmy hendrix
+	fmt.Println(salaryByLetter["J"]["Jimmy Hendrix"])
+
+	for name, salary := range salaryByLetter["J"] {
+		fmt.Printf("Name: %s - Salary: %.2f\n", name, salary)
+	}
+
+	delete(salaryByLetter, "T")
+
 }
