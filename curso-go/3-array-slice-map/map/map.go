@@ -74,7 +74,16 @@ func main() {
 	for name, salary := range salaryByLetter["J"] {
 		fmt.Printf("Name: %s - Salary: %.2f\n", name, salary)
 	}
+	fmt.Println()
 
 	delete(salaryByLetter, "T")
+
+	// for inside for
+	for k, v := range salaryByLetter {
+		fmt.Printf("Letter %s\n", k)
+		for k, v := range v {
+			fmt.Printf("Name: %s - Salary: %.2f\n", k, v)
+		}
+	}
 
 }
