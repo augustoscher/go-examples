@@ -13,6 +13,9 @@ func main() {
 
 	fmt.Println(approved)
 
+	//override value in map
+	approved[987654321] = "Mary2"
+
 	//loop in map
 	for key, value := range approved {
 		fmt.Printf("ID: %d - Name: %s\n", key, value)
