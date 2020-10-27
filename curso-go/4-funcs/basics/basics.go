@@ -26,7 +26,7 @@ func f5() (string, int64) {
 }
 
 // named return
-func change(p1, p2 int) (xunda2 int, xunda1 int) {
+func change(p1, p2 int) (xunda2, xunda1 int) {
 	xunda2 = p2
 	xunda1 = p1
 	return // clean return
