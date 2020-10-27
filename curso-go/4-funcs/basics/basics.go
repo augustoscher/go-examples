@@ -14,6 +14,8 @@ func f3() string {
 	return "F3"
 }
 
+// Pure function: Receives a group of arguments, do somethin with params and maybe return value.
+// Pure function never change any state outside of function scope/block
 func f4(p1, p2 string, p3 int) string {
 	return fmt.Sprintf("F4 %s - %s - %d", p1, p2, p3)
 }
