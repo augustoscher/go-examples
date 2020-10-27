@@ -25,6 +25,13 @@ func f5() (string, int64) {
 	return "One", 2
 }
 
+// named return
+func change(p1, p2 int) (xunda2 int, xunda1 int) {
+	xunda2 = p2
+	xunda1 = p1
+	return // clean return
+}
+
 func main() {
 	f1()
 	f2("Oi,", "Tudo bem?")
@@ -40,4 +47,7 @@ func main() {
 
 	// not valid:
 	// r5 := f5() not same returns are mapped
+
+	xunda2, xunda1 := change(1000, 1001)
+	fmt.Printf("Xunda2: %d - Xunda1: %d\n", xunda2, xunda1)
 }
