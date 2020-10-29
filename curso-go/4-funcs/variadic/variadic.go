@@ -24,5 +24,5 @@ func avg(numbers ...float64) float64 {
 }
 
 func main() {
-	fmt.Println(avg(5.0, 7.0, 5.0))
+	fmt.Printf("Avg: %.2f\n", avg(5.0, 7.0, 5.0))
 }
