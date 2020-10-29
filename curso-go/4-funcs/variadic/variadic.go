@@ -23,6 +23,21 @@ func avg(numbers ...float64) float64 {
 	return total / float64(len(numbers))
 }
 
+func printApproved(approved ...string) {
+	fmt.Println("Approved:")
+	for _, value := range approved {
+		fmt.Println(value)
+	}
+}
+
 func main() {
 	fmt.Printf("Avg: %.2f\n", avg(5.0, 7.0, 5.0))
+
+	name := []string{
+		"John",
+		"Tom",
+		"Hana",
+	}
+	// spread slice in variadic
+	printApproved(name...)
 }
