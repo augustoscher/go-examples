@@ -18,8 +18,7 @@ func factorial2(n uint) uint {
 	if n == 0 {
 		return 1
 	}
-	lastResult := factorial2(n - 1)
-	return n * lastResult
+	return n * factorial2(n-1)
 }
 
 func main() {
