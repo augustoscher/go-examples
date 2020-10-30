@@ -14,6 +14,14 @@ func factorial(n int) (int, error) {
 	}
 }
 
+func factorial2(n uint) uint {
+	if n == 0 {
+		return 1
+	}
+	lastResult := factorial2(n - 1)
+	return n * lastResult
+}
+
 func main() {
 	res, _ := factorial(5)
 	fmt.Printf("Fac: %d\n", res)
@@ -24,4 +32,6 @@ func main() {
 	} else {
 		fmt.Println(res)
 	}
+
+	fmt.Println(factorial2(5))
 }
