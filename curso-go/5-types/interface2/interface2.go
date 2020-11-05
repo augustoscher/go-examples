@@ -21,4 +21,10 @@ func main() {
 	fmt.Println(pernaLonga)
 	pernaLonga.run()
 	fmt.Println(pernaLonga)
+
+	// Passa a referência do Animal criado para a variavel patolino
+	var patolino = &Animal{"Patolino", 22, false}
+	fmt.Println(patolino)
+	patolino.run()
+	fmt.Println(patolino)
 }
