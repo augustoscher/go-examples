@@ -16,4 +16,10 @@ func main() {
 	type Dynamic interface{}
 	var something2 Dynamic = "Opa"
 	fmt.Println(something2)
+
+	something2 = true
+	fmt.Println(something2)
+
+	something2 = Course{"Teste"}
+	fmt.Println(something2)
 }
