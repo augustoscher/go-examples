@@ -13,5 +13,6 @@ func main() {
 	fmt.Println(side(p1, p2))
 
 	//Distance is also visible inside and outside of the package
+	// because is declared with capital letter
 	fmt.Println(Distance(p1, p2))
 }
