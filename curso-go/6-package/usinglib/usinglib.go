@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/augustoscher/goarea/test"
+
 	"github.com/augustoscher/goarea"
 )
 
@@ -16,6 +18,8 @@ func main() {
 	fmt.Println(goarea.CircunferenceArea(6.0))
 
 	fmt.Println(goarea.RectangleArea(3.0, 5.4))
+
+	test.PrintValue("Xunda")
 
 	// Not visible
 	// fmt.Println(goarea._EquilateralTriangleArea(3.0, 4.0))
