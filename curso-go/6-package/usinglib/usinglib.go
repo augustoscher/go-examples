@@ -21,6 +21,6 @@ func main() {
 
 	test.PrintValue("Xunda")
 
-	// Not visible
+	// Not visible because init with _
 	// fmt.Println(goarea._EquilateralTriangleArea(3.0, 4.0))
 }
