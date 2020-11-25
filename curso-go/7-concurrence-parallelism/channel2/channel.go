@@ -31,5 +31,5 @@ func main() {
 	fmt.Println(<-ch)
 	fmt.Println("Logo apos a segunda leitura do channel")
 
-	// <-ch se lermos de novo, teremos um erro pois não há mais nenhum valor para ler do canal
+	// <-ch se lermos de novo, teremos um erro pois não há mais nenhum valor para ler do canal.
 }
