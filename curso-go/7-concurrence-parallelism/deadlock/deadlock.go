@@ -19,5 +19,5 @@ func main() {
 	fmt.Println(<-c) //operacao bloqueante
 	fmt.Println("Lido")
 	fmt.Println(<-c) //deadlock
-	fmt.Println("Não imprime pois da erro na linha acima")
+	fmt.Println("Não imprime pois ocorrerá erro na linha acima")
 }
