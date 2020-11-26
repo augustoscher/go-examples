@@ -31,5 +31,5 @@ func main() {
 
 	time.Sleep(time.Second * 2) //só para esperar o buffer processar
 	fmt.Println("fim")
-	// o buffer fico cheio, contendo as infos: 2, 3 e 4
+	// Ao final da execução do programa o buffer estava cheio, contendo os valores: 2, 3 e 4
 }
