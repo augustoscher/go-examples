@@ -1,6 +1,9 @@
 package main
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 func isPrimo(num int) bool {
 	for i := 2; i < num; i++ {
@@ -23,8 +26,19 @@ func getPrimos(qtd int, c chan int) {
 			}
 		}
 	}
+	// encerra a comunicação do canal
+	// sem o close, teremos um deadlock no range do channel,
+	// pois ele estará lendo dados mas nenhuma go routine estará escrevendo.
+	close(c)
 }
 
 func main() {
-
+	c := make(chan int, 30)
+	go getPrimos(cap(c), c) // func cap retorna o tamanho do buffer do channel
+	i := 0
+	for numeroPrimo := range c {
+		i++
+		fmt.Printf("Primo %d: %d\n", i, numeroPrimo)
+	}
+	fmt.Println("Fim")
 }
