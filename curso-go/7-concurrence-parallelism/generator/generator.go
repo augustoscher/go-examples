@@ -34,6 +34,7 @@ func main() {
 	c2 := title("https://amazon.com", "https://www.youtube.com")
 
 	//Imprime o primeiro e segundo resultado de cada channel
+	//Não necessáriamente serão retornados os titulos na ordem que chamamos, vai depender de quão rápido o site carrega.
 	fmt.Println("First: ", <-c1, " | ", <-c2)
 	fmt.Println("Second: ", <-c1, " | ", <-c2)
 }
