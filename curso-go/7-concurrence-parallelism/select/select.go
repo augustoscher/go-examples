@@ -12,7 +12,8 @@ func fastest(url1, url2, url3 string) string {
 	c2 := html.Title(url2)
 	c3 := html.Title(url3)
 
-	// Estrutura de controle específica para concorrência
+	// Estrutura de controle específica para concorrência.
+	// Retorna o primeiro retorno dos canais considerados
 	select {
 	case t1 := <-c1:
 		return t1
