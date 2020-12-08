@@ -1,4 +1,9 @@
-package math
+package mathematics
+
+import (
+	"fmt"
+	"strconv"
+)
 
 //Average is responsible for calculate the sum of two numbers divided by 2
 func Average(numbers ...float64) float64 {
@@ -6,5 +11,7 @@ func Average(numbers ...float64) float64 {
 	for _, n := range numbers {
 		sum += n
 	}
-	return sum / float64(len(numbers))
+	avg := sum / float64(len(numbers))
+	rounded, _ := strconv.ParseFloat(fmt.Sprintf("%.2f", avg), 64)
+	return rounded
 }
