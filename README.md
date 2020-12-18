@@ -32,3 +32,4 @@ source ~/.profile
 go version
 go env | grep GOPATH
 ```
+
