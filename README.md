@@ -10,7 +10,7 @@ Snippets, Examples, Courses, Hacking :)
 2. Unzip Go file
 
 ```bash
-tar -C /usr/local -xzf nome.tar.gz
+tar -C /usr/local -xzf name.tar.gz
 ```
 
 3. Export /usr/local/go/bin` to path
