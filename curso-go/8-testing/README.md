@@ -70,3 +70,7 @@ cd /home/AUGUSTO.SCHER/go/src/github.com/augustoscher/math
 ```bash
 go test -cover
 ```
+
+```bash
+go test -coverprofile=result.out
+```
