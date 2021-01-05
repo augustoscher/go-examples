@@ -54,3 +54,19 @@ Result:
 --- PASS: TestIndex (0.00s)
 PASS
 ```
+
+## Coverage
+
+To get code coverage, the test needs to be on GOPATH folder
+
+- Enter on folder:
+
+```bash
+cd /home/AUGUSTO.SCHER/go/src/github.com/augustoscher/math
+```
+
+- Run:
+
+```bash
+go test -cover
+```
