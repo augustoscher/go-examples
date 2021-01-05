@@ -73,4 +73,8 @@ go test -cover
 
 ```bash
 go test -coverprofile=result.out
+
+go tool cover -func=result.out
+
+go tool cover -html=result.out
 ```
