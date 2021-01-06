@@ -19,4 +19,8 @@ func main() {
 	stmt, _ := db.Prepare("update users set name = ? where id = ?")
 	stmt.Exec("Update", 1)
 	stmt.Exec("Schersnegger", 2)
+
+	stmt2, _ := db.Prepare("delete from users where id in (?, ?, ?)")
+	stmt2.Exec(1, 2, 3)
+	stmt2.Exec(5, 6, 7)
 }
