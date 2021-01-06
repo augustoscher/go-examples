@@ -13,6 +13,13 @@ docker run \
  mysql:latest
 ```
 
+Connect on database inside of container
+
+```bash
+docker exec -it mysql bash
+mysql -u root -p
+```
+
 Running Adminer on docker
 
 ```bash
