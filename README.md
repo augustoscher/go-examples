@@ -5,7 +5,7 @@ Snippets, Examples, Courses, Hacking :)
 
 ## Installing
 
-1. Download Go from [golang.org](golang.org) to usr/local folder
+1. Download Go from [golang.org](https://golang.org/) to usr/local folder
 
 2. Unzip Go file
 
