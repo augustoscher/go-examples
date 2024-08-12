@@ -18,5 +18,17 @@ func main() {
 	avg := total / float64(len(grades))
 	fmt.Printf("Méida é: %.2f\n", avg)
 
-	
+	func findValue(arr []int, target int) bool {
+		for _, v := range arr {
+			if v == target {
+				return true
+			}
+		}
+		return false
+	}
+
+	numbers := []int{2, 3, 5, 7, 11, 13}
+	target := 5
+	found := findValue(numbers, target)
+	fmt.Println(found) // Output: true
 }
