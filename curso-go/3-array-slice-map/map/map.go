@@ -86,4 +86,13 @@ func main() {
 		}
 	}
 
+	s := map[string]bool{
+    "jc": true,
+    "jc-estudante": true,
+  }
+  
+  fmt.Printf("Value: %v\n", s["jc"])
+	fmt.Printf("Value: %v\n", s["jc-estudante"])
+	fmt.Printf("Value: %v\n", s["test"])
+	fmt.Printf("Value: %v\n", s[""])
 }

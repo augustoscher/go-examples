@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type NotificationInfoVariable struct {
   Name  string `json:"name"`
